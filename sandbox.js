@@ -1,6 +1,4 @@
 'use strict'
-
-
 function getAllMusic(){
     $.ajax({
         url: 'http://www.devcodecampmusiclibrary.com/api/music',
@@ -17,21 +15,16 @@ function getAllMusic(){
                                 + '<td>' + data[i].genre + '</td>'
                                 + '<td>' + data[i].releaseDate + '</td>'
                             + '</tr>');
-
             }
  },
-
-       error: function(jQxhr, textStatus, errorThrown){
+         error: function(jQxhr, textStatus, errorThrown){
                 //if the request fails, the errorThrown parameter will contain details of the error 
                 console.log(errorThrown);
         },
      });
-
 }
-
 $(document).ready(function(){
     getAllMusic();
 });
-
 getAllMusic();
 

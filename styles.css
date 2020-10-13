@@ -1,14 +1,9 @@
-   *{
+*{
        background: orange;
-       
-   } 
-   table, th, td {
+} 
+table, th, td {
         border: 1px solid black;
         padding-left: 5px;
         padding-right: 5px;
-        
-
-        
-
-    }
+}
     
